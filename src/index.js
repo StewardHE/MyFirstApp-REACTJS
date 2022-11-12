@@ -1,6 +1,9 @@
 // Here, import react and reactDOM
 import React from "react";
-import { ReactDOM } from "react";
+import ReactDOM from "react";
+
+// this import the App component from App.jsx
+import { App } from "./App";
 
 // create a div element using react(Without using JSX)
     // React.createElement('div', {}, React.createElement('div', {}))
@@ -8,9 +11,6 @@ import { ReactDOM } from "react";
 // create a div element using JSX
 // <div>This is a div</div>
 
-// This is for add a div in the root div that is in the public/index.html
-ReactDOM.render(
-    <div>
-        Hello World
-    </div>, 
-document.getElementById('root'))
+
+// this render the component App 
+ReactDOM.render(<App />, document.getElementById('root'))
