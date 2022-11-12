@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Here, import react and reactDOM
+import React from "react";
+import { ReactDOM } from "react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// create a div element using react(Without using JSX)
+    // React.createElement('div', {}, React.createElement('div', {}))
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// create a div element using JSX
+// <div>This is a div</div>
+
+// This is for add a div in the root div that is in the public/index.html
+ReactDOM.render(
+    <div>
+        Hello World
+    </div>, 
+document.getElementById('root'))
